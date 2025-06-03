@@ -1,0 +1,80 @@
+@use 'variaveis';
+@use 'mixins';
+
+.menu__list {
+  list-style: none;
+  @include mixins.flex-center(2vw);
+  flex-wrap: wrap;
+  font-size: 1vw;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #333;
+}
+
+.servicos__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.servicos__imagem {
+  width: 40vw;
+  height: 50vh;
+  max-width: 40vw;
+  min-width: 10vw;
+  display: block;
+  margin: 5vh auto 20vh;
+  border-radius: variaveis.$raio-borda;
+  @include mixins.box-shadow;
+}
+
+.botao {
+  background-color: variaveis.$cor-primaria-transparente;
+  color: variaveis.$cor-clara;
+  border: none;
+  padding: 1vh;
+  margin: 5vh 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variaveis.$cor-primaria-hover;
+  }
+}
+
+.contato__form {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.contato__input,
+.contato__textarea {
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.7em;
+  @include mixins.box-shadow;
+}
+
+.contato__label {
+  text-align: left;
+}
+
+.contato__botao {
+  background-color: variaveis.$cor-transparente-contato;
+  color: variaveis.$cor-clara;
+  border: none;
+  padding: 1vh;
+  margin-top: 2vh;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.contato__botao:hover {
+  background-color: variaveis.$cor-primaria-hover;
+}

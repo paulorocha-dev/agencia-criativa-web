@@ -1,0 +1,20 @@
+@use 'variaveis';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variaveis.$fonte-padrao;
+  background-color: variaveis.$cor-primaria-transparente;
+  color: variaveis.$cor-escura;
+  line-height: 1.6;
+  font-size: 1.2vw;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 2vh;
+}

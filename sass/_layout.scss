@@ -1,0 +1,68 @@
+@use 'variaveis';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: auto;
+  gap: 5vh;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  width: 20vw;
+  max-width: 30vw;
+  min-width: 10vw;
+  display: block;
+  margin: 5vh auto 5vh 2vw;
+}
+
+header {
+  grid-column: 2 / 3;
+  text-align: center;
+  padding: 4vh 0;
+  margin: 5vh auto;
+}
+
+section {
+  grid-column: 2 / 3;
+  padding: 5vh;
+  text-align: center;
+}
+
+.home {
+  grid-column: 1 / 4;
+  text-align: center;
+  margin: 3vh;
+  font-size: 1.7em;
+}
+
+.sobre,
+.servicos,
+.depoimentos {
+  grid-column: 1 / 4;
+  margin: 2vh;
+  font-size: 1.5em;
+  padding: 8vh 2vw;
+  border-radius: variaveis.$raio-borda;
+  line-height: 2;
+}
+
+.sobre, .depoimentos {
+  background-color: variaveis.$cor-sobre;
+  color: variaveis.$cor-clara;
+}
+
+.servicos {
+  background-color: variaveis.$cor-servicos;
+  color: variaveis.$cor-clara;
+}
+
+.contato {
+  grid-column: 2 / 3;
+  font-size: 1.5em;
+  background-color: variaveis.$cor-contato;
+  color: variaveis.$cor-escura;
+  border-radius: variaveis.$raio-borda;
+  padding: 2vh;
+  line-height: 2;
+}

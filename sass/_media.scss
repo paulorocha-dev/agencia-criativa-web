@@ -1,0 +1,84 @@
+@use 'variaveis';
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+    padding: 2vh;
+  }
+
+  body {
+    background-color: rgba(179, 255, 0, 0.397);
+    font-size: 3vw;
+  }
+
+  section {
+    padding: 2vh 0;
+    font-size: 3vw;
+  }
+
+  .logo {
+    width: 35vw;
+    margin: 2vh auto;
+  }
+
+  .menu__list {
+    gap: 5vw;
+  }
+
+  .menu__link {
+    font-size: 4vw;
+  }
+
+  .servicos__imagem {
+    width: 75vw;
+    max-width: 90vw;
+    height: auto;
+    margin: 4vh auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+  body {
+    background-color: #fa48017e;
+    font-size: 0.7em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p,
+  ul {
+    font-size: 1.5em;
+  }
+
+  .home {
+    font-size: 1.5em;
+    margin: 2vh auto;
+  }
+
+  .menu__link {
+    font-size: 2vw;
+  }
+
+  .servicos__imagem {
+    width: 80vw;
+    max-width: 90vw;
+    height: auto;
+    margin: 5vh auto;
+  }
+
+  .contato__form {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-color: variaveis.$cor-primaria-transparente;
+  }
+
+  .logo {
+    width: 10vw;
+  }
+}
